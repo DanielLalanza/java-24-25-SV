@@ -33,11 +33,9 @@ public class Simpson {
                         tablero[rx][ry] = pers;
                     }
                 }
-           // } else {
-           //     k = k - 1;
         }
     }
-   // }
+
 
     public static void main(String[] args) {
         //System.out.printf("Hello and welcome!");
