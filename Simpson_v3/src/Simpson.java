@@ -47,7 +47,7 @@ public class Simpson {
             columnaBart = ry;
         }
     }
-    
+
     public static void main(String[] args) {
         char personaje = 'L';   //Definir como caracter (char) comillas 'simples'
         rellenarTablero(personaje);
@@ -59,7 +59,7 @@ public class Simpson {
         System.out.println("Muevete con WASD");
 
         // DESPLAZAMIENTO
-        int vidas = 10;
+        int vidas = 3;
         do {
             Scanner sc = new Scanner(System.in);
             String desplazamiento  = sc.nextLine();
@@ -75,12 +75,12 @@ public class Simpson {
                                 case 'H':
                                     vidas = vidas-1;
                                     System.out.println("Has perdido 1 vida, vidas restantes: " + vidas);
-                                    tablero[filaBart+1][columnaBart] = 'F';
+                                    tablero[filaBart+1][columnaBart] = 'L';
                                     tablero[filaBart][columnaBart] = 'B';
                                     imprimirTablero();
                                     break;
                                 case 'L':
-                                    tablero[filaBart+1][columnaBart] = 'F';
+                                    tablero[filaBart+1][columnaBart] = 'L';
                                     tablero[filaBart][columnaBart] = 'B';
                                     imprimirTablero();
                             }
@@ -90,37 +90,81 @@ public class Simpson {
                         break;
                     case "A":
                         if ((columnaBart-1) >= 0) {
-                            tablero[filaBart][columnaBart] = 'F';
                             columnaBart = columnaBart-1;
-                            tablero[filaBart][columnaBart] = 'B';
-                            imprimirTablero();
+                            switch (tablero[filaBart][columnaBart]) {
+                                case 'M':
+                                    System.out.println("El muro no deja desplazarte");
+                                    columnaBart++;
+                                    break;
+                                case 'H':
+                                    vidas = vidas-1;
+                                    System.out.println("Has perdido 1 vida, vidas restantes: " + vidas);
+                                    tablero[filaBart][columnaBart+1] = 'L';
+                                    tablero[filaBart][columnaBart] = 'B';
+                                    imprimirTablero();
+                                    break;
+                                case 'L':
+                                    tablero[filaBart][columnaBart+1] = 'L';
+                                    tablero[filaBart][columnaBart] = 'B';
+                                    imprimirTablero();
+                            }
                         }else {
                             System.out.println("FUERA DE FIMITES");
                         }
                         break;
                     case "S":
                         if ((filaBart+1) <= 9) {
-                            tablero[filaBart][columnaBart] = 'F';
                             filaBart = filaBart+1;
-                            tablero[filaBart][columnaBart] = 'B';
-                            imprimirTablero();
+                            switch (tablero[filaBart][columnaBart]) {
+                                case 'M':
+                                    System.out.println("El muro no deja desplazarte");
+                                    filaBart--;
+                                    break;
+                                case 'H':
+                                    vidas = vidas-1;
+                                    System.out.println("Has perdido 1 vida, vidas restantes: " + vidas);
+                                    tablero[filaBart-1][columnaBart] = 'L';
+                                    tablero[filaBart][columnaBart] = 'B';
+                                    imprimirTablero();
+                                    break;
+                                case 'L':
+                                    tablero[filaBart-1][columnaBart] = 'L';
+                                    tablero[filaBart][columnaBart] = 'B';
+                                    imprimirTablero();
+                            }
                         }else {
                             System.out.println("FUERA DE FIMITES");
                         }
                         break;
                     case "D":
                         if ((columnaBart+1) <= 9) {
-                            tablero[filaBart][columnaBart] = 'F';
                             columnaBart = columnaBart+1;
-                            tablero[filaBart][columnaBart] = 'B';
-                            imprimirTablero();
+                            switch (tablero[filaBart][columnaBart]) {
+                                case 'M':
+                                    System.out.println("El muro no deja desplazarte");
+                                    columnaBart--;
+                                    break;
+                                case 'H':
+                                    vidas = vidas-1;
+                                    System.out.println("Has perdido 1 vida, vidas restantes: " + vidas);
+                                    tablero[filaBart][columnaBart-1] = 'L';
+                                    tablero[filaBart][columnaBart] = 'B';
+                                    imprimirTablero();
+                                    break;
+                                case 'L':
+                                    tablero[filaBart][columnaBart-1] = 'L';
+                                    tablero[filaBart][columnaBart] = 'B';
+                                    imprimirTablero();
+                            }
                         }else {
-                            imprimirTablero();
                             System.out.println("FUERA DE FIMITES");
                         }
                         break;
             }
         } while (vidas>0);
+        if (vidas==0){
+            System.out.println("HAS MUERTO");
+        }
     }
 }
 //min 34
