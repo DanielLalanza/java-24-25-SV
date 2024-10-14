@@ -60,8 +60,8 @@ public class Simpson {
 
         // DESPLAZAMIENTO
         int vidas = 3;
-        do {
             Scanner sc = new Scanner(System.in);
+        do {
             String desplazamiento  = sc.nextLine();
             switch (desplazamiento){
                     case "W":
@@ -89,7 +89,6 @@ public class Simpson {
                                     tablero[filaBart][columnaBart] = 'B';
                                     imprimirTablero();
                                     System.out.println("VICTORIA!!!");
-                                    System.exit(0);
                                     break;
                             }
                         }else {
@@ -192,7 +191,7 @@ public class Simpson {
                             System.out.println("FUERA DE FIMITES");
                         }
             }
-        } while (vidas>0 || tablero[filaBart][columnaBart] == tablero[MAX_FILA_TABLERO-1][MAX_COLUMNA_TABLERO-1]);
+        } while (vidas > 0);
         if (vidas==0){
             System.out.println("HAS MUERTO");
         }
