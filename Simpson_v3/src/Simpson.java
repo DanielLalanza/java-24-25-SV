@@ -83,6 +83,14 @@ public class Simpson {
                                     tablero[filaBart+1][columnaBart] = 'L';
                                     tablero[filaBart][columnaBart] = 'B';
                                     imprimirTablero();
+                                    break;
+                                case 'O':
+                                    tablero[filaBart+1][columnaBart] = 'L';
+                                    tablero[filaBart][columnaBart] = 'B';
+                                    imprimirTablero();
+                                    System.out.println("VICTORIA!!!");
+                                    System.exit(0);
+                                    break;
                             }
                         }else {
                             System.out.println("FUERA DE FIMITES");
@@ -107,6 +115,14 @@ public class Simpson {
                                     tablero[filaBart][columnaBart+1] = 'L';
                                     tablero[filaBart][columnaBart] = 'B';
                                     imprimirTablero();
+                                    break;
+                                case 'O':
+                                    tablero[filaBart][columnaBart+1] = 'L';
+                                    tablero[filaBart][columnaBart] = 'B';
+                                    imprimirTablero();
+                                    System.out.println("VICTORIA!!!");
+                                    System.exit(0);
+                                    break;
                             }
                         }else {
                             System.out.println("FUERA DE FIMITES");
@@ -131,6 +147,14 @@ public class Simpson {
                                     tablero[filaBart-1][columnaBart] = 'L';
                                     tablero[filaBart][columnaBart] = 'B';
                                     imprimirTablero();
+                                    break;
+                                case 'O':
+                                    tablero[filaBart-1][columnaBart] = 'L';
+                                    tablero[filaBart][columnaBart] = 'B';
+                                    imprimirTablero();
+                                    System.out.println("VICTORIA!!!");
+                                    System.exit(0);
+                                    break;
                             }
                         }else {
                             System.out.println("FUERA DE FIMITES");
@@ -155,16 +179,23 @@ public class Simpson {
                                     tablero[filaBart][columnaBart-1] = 'L';
                                     tablero[filaBart][columnaBart] = 'B';
                                     imprimirTablero();
+                                    break;
+                                case 'O':
+                                    tablero[filaBart][columnaBart-1] = 'L';
+                                    tablero[filaBart][columnaBart] = 'B';
+                                    imprimirTablero();
+                                    System.out.println("VICTORIA!!!");
+                                    System.exit(0);
+                                    break;
                             }
                         }else {
                             System.out.println("FUERA DE FIMITES");
                         }
-                        break;
             }
-        } while (vidas>0);
+        } while (vidas>0 || tablero[filaBart][columnaBart] == tablero[MAX_FILA_TABLERO-1][MAX_COLUMNA_TABLERO-1]);
         if (vidas==0){
             System.out.println("HAS MUERTO");
         }
     }
 }
-//min 34
+
