@@ -16,33 +16,28 @@ public class Simpson {
     public static void imprimirTablero()  {
         for (int i = 0; i < MAX_FILA_TABLERO; i++) {
             for (int j = 0; j < MAX_COLUMNA_TABLERO; j++) {
-                System.out.print("["+tablero[i][j]+"]");
+                System.out.print(tablero[i][j]+"  ");
             }
             System.out.println();
         }
     }
 
-    public static void randomizarHomer(char pers) {
+    public static void AsignarCasillaLibre(char pers, int repeticiones) {
         Random r = new Random();
         int rxh;
         int ryh;
-        for (int k = 0; k < 10; k++) {
+        for (int k = 0; k < repeticiones; k++) {
             do {
                 rxh = r.nextInt(MAX_FILA_TABLERO);
                 ryh = r.nextInt(MAX_COLUMNA_TABLERO);
             }
             while (tablero[rxh][ryh]!='L');{
             }
-            //if (tablero[rx][ry] == pers) {
-                for (int i = 0; i < MAX_FILA_TABLERO; i++) {
-                    for (int j = 0; j < MAX_COLUMNA_TABLERO; j++) {
-                        tablero[rxh][ryh] = pers;
-                    }
-                }
+            tablero[rxh][ryh] = pers;
         }
     }
 
-    public static void randomizarBart(char pj) {
+/*    public static void randomizarBart(char pj) {
         Random r = new Random();
         int rxh;
         int ryh;
@@ -53,38 +48,14 @@ public class Simpson {
         while (tablero[rxh][ryh]!='L');{
         }
         tablero[rxh][ryh] = pj;
-    }
-
-    public static void randomizarMuro(char pers) {
-        Random r = new Random();
-        int rxm;
-        int rym;
-        for (int k = 0; k < 10; k++) {
-            do {
-                rxm = r.nextInt(MAX_FILA_TABLERO);
-                rym = r.nextInt(MAX_COLUMNA_TABLERO);
-            }
-            while (tablero[rxm][rym]!='L');{
-            }
-            //if (tablero[rx][ry] == pers) {
-            for (int i = 0; i < MAX_FILA_TABLERO; i++) {
-                for (int j = 0; j < MAX_COLUMNA_TABLERO; j++) {
-                    tablero[rxm][rym] = pers;
-                }
-            }
-        }
-    }
-
+    }*/
     public static void main(String[] args) {
         char personaje = 'L';   //Definir como caracter (char) comillas 'simples'
         rellenarTablero(personaje);
         tablero[MAX_FILA_TABLERO-1][MAX_COLUMNA_TABLERO-1] = 'O';
-        personaje = 'H';
-        randomizarHomer(personaje);
-        personaje = 'B';
-        randomizarBart(personaje);
-        personaje = 'M';
-        randomizarMuro(personaje);
+        AsignarCasillaLibre('H', 10);
+        AsignarCasillaLibre('B', 10);
+        AsignarCasillaLibre('M', 10);
         imprimirTablero();
     }
 }
