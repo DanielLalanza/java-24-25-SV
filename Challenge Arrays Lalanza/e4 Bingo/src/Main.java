@@ -3,6 +3,7 @@ import java.util.Arrays;
 
 public class Main {
     public static int[][] matriz = new int[3][9];
+    // Rellenar la matriz siguiendo los parametros pedidos en el ejercicio
     public static void rellenarMatriz(){
         Random r = new Random();
         for (int i = 0; i <3 ; i++) {
@@ -17,6 +18,7 @@ public class Main {
         }
     }
 
+    // Ordenamos la matriz extrayendo cada columna y odenandola por separado con Arrays.short
     public static void ordenarColumnas() {
         for (int j = 0; j < 9; j++) {
             int[] columna = new int[3];
@@ -31,6 +33,7 @@ public class Main {
         }
     }
 
+    //Recorremos la matriz imprimiendo cada valor de forma ordenada
     public static void imprimirMariz(){
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j <9; j++) {
