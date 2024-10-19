@@ -24,10 +24,10 @@ public class Main {
                 //String arrayString = String.valueOf(array[j]);
                 if (numUsuario.equals(array[j])) {
                     array[j] = "XX";
-                    System.out.println("GOD");
+                    //System.out.println("GOD");
                 }
                 else{
-                    System.out.println("AYUDA");
+                    //System.out.println("AYUDA");
                 }
             }
 
