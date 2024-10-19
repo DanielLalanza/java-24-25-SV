@@ -22,7 +22,7 @@ public class Main {
             //String intento = String.valueOf(i);
             for (int j = 0; j < 6; j++) {
                 //String arrayString = String.valueOf(array[j]);
-                if (numUsuario == array[j]) {
+                if (numUsuario.equals(array[j])) {
                     array[j] = "XX";
                     System.out.println("GOD");
                 }
