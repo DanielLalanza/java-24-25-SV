@@ -1,9 +1,10 @@
-public class Main {
+import java.util.Random;
 
-    public static void main(String[] args) {
-        int filas = 10;
-        int columnas = 9;
-        int tablero[][] = new int[filas][columnas];
+public class Main {
+    static int filas = 10;
+    static int columnas = 9;
+    static int [][] tablero = new int[filas][columnas];
+    public static void randomizarTablero(){
         Random random=new Random();
         for (int i = 0; i < filas; i++) {
             for (int j = 0; j < columnas; j++) {
@@ -12,6 +13,36 @@ public class Main {
                 tablero[i][j] = numAleatorio;
             }
         }
+    }
+
+    public static void ordenarBurbuja (){
+        for (int columna = 0; columna < 9; columna++) {
+            for (int i = 0; i < filas - 1; i++) {
+                for (int j = i; j < filas; j++) {
+                    if (tablero[i][columna] > tablero[j][columna]) {
+                        int aux = tablero[i][columna];
+                        tablero[i][columna] = tablero[j][columna];
+                        tablero[j][columna] = aux;
+                    }
+                }
+            }
+        }
+    }
+
+    public static void imprimirTablero(){
+        for (int i = 0; i < filas; i++) {
+            for (int j = 0; j < columnas; j++){
+                System.out.print(tablero[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void main(String[] args) {
+
+        randomizarTablero();
+        ordenarBurbuja();
+        imprimirTablero();
                 /*
         int cont = 0;
         do {
@@ -51,24 +82,6 @@ public class Main {
                 }
             }
         }*/
-        for (int columna = 0; columna < 9; columna++) {
-            for (int i = 0; i < filas - 1; i++) {
-                for (int j = i; j < filas; j++) {
-                    if (tablero[i][columna] > tablero[j][columna]) {
-                        int aux = tablero[i][columna];
-                        tablero[i][columna] = tablero[j][columna];
-                        tablero[j][columna] = aux;
-                    }
-                }
-            }
-        }
 
-
-        for (int i = 0; i < filas; i++) {
-            for (int j = 0; j < columnas; j++){
-                System.out.print(tablero[i][j] + " ");
-            }
-            System.out.println();
-        }
     }
 }
