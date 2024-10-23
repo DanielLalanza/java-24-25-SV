@@ -1,0 +1,13 @@
+// Repetimos el procesos n-1 veces para un arreglo de tamaño n.
+        for(int i=0; i < vec.length-1; i++){
+         // En cada iteración llegamos hasta n-1-i ya que hemos ordenado i enteros
+         //en las i iteraciones pasadas.
+               for(int j=0; j < (vec.length-1-i); j++){ 
+                   //Comparamos e intercambiamos si se cumple la condición
+                    if(vec[j] > vec[j+1]){ 
+                            aux=vec[j];                
+                            vec[j]=vec[j+1];          
+                            vec[j+1]=aux;
+                     }   
+               }
+          }
