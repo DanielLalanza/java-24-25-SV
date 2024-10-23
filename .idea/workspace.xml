@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dc2024a2-267b-4966-a344-c36e7e1eb74f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/BusquedaTesoro/BusquedaTesoro.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Challenge Arrays Lalanza/Ej1/Ej1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Challenge Arrays Lalanza/Ej2/Ej2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Challenge Arrays Lalanza/Ej3/Ej3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Challenge Arrays Lalanza/e4 Bingo/e4 Bingo.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EjerciciosPracticar/Optimizar 01/Optimizar 01.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EjerciciosPracticar/ej 02/ej 02.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entornos_ej_03v2/Entornos_ej_03v2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloWorld001/HelloWorld001.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prueba/Prueba.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimsonClase/SimsonClase.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2npbTwIe1P7bGcYuekrAW5MktUC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dc2024a2-267b-4966-a344-c36e7e1eb74f" name="Changes" comment="" />
+      <created>1729672976850</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1729672976850</updated>
+    </task>
+    <servers />
+  </component>
+</project>
