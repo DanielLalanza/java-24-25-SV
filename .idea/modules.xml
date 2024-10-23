@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BusquedaTesoro/BusquedaTesoro.iml" filepath="$PROJECT_DIR$/BusquedaTesoro/BusquedaTesoro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Challenge Arrays Lalanza/Ej1/Ej1.iml" filepath="$PROJECT_DIR$/Challenge Arrays Lalanza/Ej1/Ej1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Challenge Arrays Lalanza/Ej2/Ej2.iml" filepath="$PROJECT_DIR$/Challenge Arrays Lalanza/Ej2/Ej2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Challenge Arrays Lalanza/Ej3/Ej3.iml" filepath="$PROJECT_DIR$/Challenge Arrays Lalanza/Ej3/Ej3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Entornos_ej_03v2/Entornos_ej_03v2.iml" filepath="$PROJECT_DIR$/Entornos_ej_03v2/Entornos_ej_03v2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HelloWorld001/HelloWorld001.iml" filepath="$PROJECT_DIR$/HelloWorld001/HelloWorld001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EjerciciosPracticar/Optimizar 01/Optimizar 01.iml" filepath="$PROJECT_DIR$/EjerciciosPracticar/Optimizar 01/Optimizar 01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Prueba/Prueba.iml" filepath="$PROJECT_DIR$/Prueba/Prueba.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Simpson_v1/Simpson_v1.iml" filepath="$PROJECT_DIR$/Simpson_v1/Simpson_v1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Simpson_v2/Simpson_v2.iml" filepath="$PROJECT_DIR$/Simpson_v2/Simpson_v2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Simpson_v3/Simpson_v3.iml" filepath="$PROJECT_DIR$/Simpson_v3/Simpson_v3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Simpson_v4/Simpson_v4.iml" filepath="$PROJECT_DIR$/Simpson_v4/Simpson_v4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SimsonClase/SimsonClase.iml" filepath="$PROJECT_DIR$/SimsonClase/SimsonClase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Challenge Arrays Lalanza/e4 Bingo/e4 Bingo.iml" filepath="$PROJECT_DIR$/Challenge Arrays Lalanza/e4 Bingo/e4 Bingo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EjerciciosPracticar/ej 02/ej 02.iml" filepath="$PROJECT_DIR$/EjerciciosPracticar/ej 02/ej 02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/java-24-25-SV.iml" filepath="$PROJECT_DIR$/.idea/java-24-25-SV.iml" />
+    </modules>
+  </component>
+</project>
