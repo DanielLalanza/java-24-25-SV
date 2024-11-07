@@ -2,7 +2,7 @@ import java.util.Random;
 
 public class Main {
     public static char [][] SopaDeLetras = new char[10][10];
-    public static String [] Palabras = {"patata","tractor","linux" };
+    public static String [] Palabras = {"patata","tractor","linux","avion","tomate" };
     static Random r = new Random();
     static String direccion;
     static int casillaX;
@@ -15,8 +15,8 @@ public class Main {
         for (contador = 0; contador < numPalabras; contador++) {
 
             do {
-                casillaX = r.nextInt(0,SopaDeLetras.length-1);
-                casillaY = r.nextInt(0,SopaDeLetras.length-1);
+                casillaX = r.nextInt(SopaDeLetras.length);
+                casillaY = r.nextInt(SopaDeLetras.length);
                 direcciónAleatoria();
             } while (!comprobarValidez());
             adjuntarPalabra();
@@ -43,7 +43,7 @@ public class Main {
     }
 
     private static void direcciónAleatoria(){
-        int direccionNum = r.nextInt(1,4);
+        int direccionNum = r.nextInt(4)+1;
 
         switch (direccionNum){
             case 1: direccion="Derecha";
@@ -64,12 +64,12 @@ public class Main {
                 }
             break;
             case "Izquierda":
-                if (casillaX+Palabras[contador].length()<0){
+                if (casillaX-Palabras[contador].length()< 0){
                     return false;
                 }
             break;
             case "Arriba":
-                if (casillaY+Palabras[contador].length()<0){
+                if (casillaY-Palabras[contador].length()<0){
                     return false;
                 }
             break;
