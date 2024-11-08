@@ -56,7 +56,7 @@ public class Main {
             /******************************************************************/
             int digitoControlCalculado;
             int resto = sumaPonderada % 10;
-            digitoControlCalculado = (resto == 0) ? 0 : (10 - resto);
+            digitoControlCalculado = (resto == 0) ? 0 : (10 - resto);       // if comprimido //
             /* CALCULAR DÍGITO DE COMPROBACIÓN*/
             /******************************************************************/
 
