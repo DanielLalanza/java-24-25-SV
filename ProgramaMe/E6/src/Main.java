@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class Main {
 
     // Método para conjugar verbos en presente
