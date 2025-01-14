@@ -17,8 +17,11 @@ public class Magdalena {
             System.out.println("La magdalena tiene el sabor "+ sabor+ " y color:"+color);
         }
 
-        // METODO
 
+        // METODO
+        public String getSabor(){
+            return sabor;
+        }
 
 
         /*
