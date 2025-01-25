@@ -1,5 +1,7 @@
 import pojo.Magdalena;
 import pojo.MagdalenaFactory;
+import pojo.Pedido;
+import pojo.*;
 
 import java.util.ArrayList;
 
@@ -18,6 +20,11 @@ public class Main {
         factory.crearMagdalena(magdalena4);
 
         factory.printMagdalena();
+
+
+        System.out.println(magdalena1.toString());
+
+
 
 
         /*Magdalena[] listaMagdalenas = new Magdalena[10];
@@ -43,6 +50,22 @@ public class Main {
         MagdalenaFactory magdalenaFactory = new MagdalenaFactory();
         listaMagdalenas[1] = magdalenaFactory.addMagdalena("chorizo", "marrón");
         System.out.println(listaMagdalenas[1]);*/
+
+
+
+        // Crear productos
+        Producto magdalena = new Producto("Magdalena de chocolate", 1.50, 10);
+        Producto croissant = new Producto("Croissant", 1.20, 5);
+        Producto galleta = new Producto("Galleta de avena", 0.80, 20);
+
+        // Crear un pedido con capacidad para 5 productos
+        Pedido pedido = new Pedido(5);
+            pedido.agregarProducto(magdalena, 3);
+            pedido.agregarProducto(croissant, 5);
+            pedido.agregarProducto(galleta, 1);
+            pedido.agregarProducto(galleta,20);
+            pedido.agregarProducto(magdalena,33);
+            pedido.imprimirTicket(pedido);
 
     }
 
