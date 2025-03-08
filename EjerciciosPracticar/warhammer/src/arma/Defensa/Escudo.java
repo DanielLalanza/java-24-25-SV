@@ -2,6 +2,7 @@ package arma.Defensa;
 
 import arma.ArmaAtaque;
 import arma.ArmaDefensa;
+import arma.Ataque.Martillo;
 import arma.IArmamentoDefensa;
 import persoanjes.WarhammerPersonaje;
 
@@ -14,7 +15,9 @@ public class Escudo extends ArmaDefensa implements IArmamentoDefensa {
 
     @Override
     public void defender(WarhammerPersonaje personajeDefendido, ArmaAtaque aramaAtaque) {
-
+        if (aramaAtaque.getClass()==Martillo.class) {
+            personajeDefendido.setEnergia(personajeDefendido.getENERGIA_MAX() - (aramaAtaque.getDaño() - vidaDefendida));
+        }else {personajeDefendido.setEnergia(personajeDefendido.getENERGIA_MAX() - (aramaAtaque.getDaño()));}
     }
 
     @Override

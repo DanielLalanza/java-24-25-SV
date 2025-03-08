@@ -8,17 +8,17 @@ import persoanjes.WarhammerPersonaje;
 import java.util.ArrayList;
 
 public class Rompehierro extends Enano implements ICombate {
-    protected ArrayList<Enano> listaEnanos;
+    protected static ArrayList<Enano> listaEnanos = new ArrayList<>();
 
     public Rompehierro(String nombre, int riqueza) {
         super(nombre, riqueza);
     }
 
-    public ArrayList<Enano> getListaEnanos() {
+    public static ArrayList<Enano> getListaEnanos() {
         return listaEnanos;
     }
 
-    public void addEnano(Enano en) {
+    public static void addEnano(Enano en) {
         listaEnanos.add(en);
     }
 

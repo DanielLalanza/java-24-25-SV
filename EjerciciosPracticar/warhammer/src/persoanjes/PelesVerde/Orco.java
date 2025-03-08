@@ -8,20 +8,20 @@ import persoanjes.WarhammerPersonaje;
 
 import java.util.ArrayList;
 
-public class Orco extends PelVerde implements ICombate {
-    ArrayList<Goblin> listaGoblin;
+public class  Orco extends PelVerde implements ICombate {
+    protected static ArrayList<Orco> listaGoblin = new ArrayList<>();
 
 
     public Orco(String nombre, String puebloNacimiento) {
         super(nombre, puebloNacimiento);
     }
 
-    public ArrayList<Goblin> getListaGoblin() {
+    public static ArrayList<Orco> getListaGoblin() {
         return listaGoblin;
     }
 
-    public void addGoblin(Goblin goblin) {
-        listaGoblin.add(goblin);
+    public static void addOrco(Orco orco) {
+        listaGoblin.add(orco);
     }
 
     @Override

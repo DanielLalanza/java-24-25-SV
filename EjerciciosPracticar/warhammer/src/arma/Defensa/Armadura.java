@@ -7,7 +7,7 @@ import arma.IArmamentoDefensa;
 import persoanjes.WarhammerPersonaje;
 
 public class Armadura extends ArmaDefensa implements IArmamentoDefensa {
-    private final int vidaDefendida=20;
+    private final int vidaDefendida=10;
 
     public Armadura(String nombre) {
         super(nombre);
@@ -15,6 +15,6 @@ public class Armadura extends ArmaDefensa implements IArmamentoDefensa {
 
     @Override
     public void defender(WarhammerPersonaje personajeDefendido, ArmaAtaque aramaAtaque) {
-
+        personajeDefendido.setEnergia(personajeDefendido.getENERGIA_MAX()-(aramaAtaque.getDaño()-vidaDefendida));
     }
 }

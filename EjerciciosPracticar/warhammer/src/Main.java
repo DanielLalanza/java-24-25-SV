@@ -6,7 +6,9 @@ import arma.Defensa.Armadura;
 import arma.Defensa.Casco;
 import arma.Defensa.Escudo;
 import persoanjes.Enanos.Martillador;
+import persoanjes.Enanos.Rompehierro;
 import persoanjes.PelesVerde.Goblin;
+import persoanjes.PelesVerde.Orco;
 import persoanjes.WarhammerPersonaje;
 
 import java.sql.SQLOutput;
@@ -36,6 +38,24 @@ public class Main {
         G2.addArmaDefensa(ar1);
         M1.addArmaDefensa(c1);
         M2.addArmaDefensa(es1);
+
+
+        Rompehierro.addEnano( new Rompehierro("Pako",2000));
+        Rompehierro.addEnano( new Rompehierro("Pakito",2000));
+
+        Orco.addOrco(new Orco("LOLO", "ARRABAL"));
+        Orco.addOrco(new Orco("LALO", "ARRABAL"));
+        Orco.getListaGoblin().get(0).addArmaAtaque(h1);
+        Orco.getListaGoblin().get(1).addArmaAtaque(a1);
+        Orco.getListaGoblin().get(0).addArmaDefensa(ar1);
+        Orco.getListaGoblin().get(1).addArmaDefensa(c1);
+
+        Rompehierro.getListaEnanos().get(0).addArmaAtaque(r1);
+        Rompehierro.getListaEnanos().get(1).addArmaAtaque(m1);
+        Rompehierro.getListaEnanos().get(0).addArmaDefensa(c1);
+        Rompehierro.getListaEnanos().get(1).addArmaDefensa(es1);
+
+
 
 
         System.out.println(G1);

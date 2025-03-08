@@ -3,11 +3,12 @@ package persoanjes;
 import arma.Arma;
 import arma.ArmaAtaque;
 import arma.ArmaDefensa;
+import interfaces.ICombate;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public abstract class WarhammerPersonaje {
+public abstract class WarhammerPersonaje implements ICombate {
     private String nombre;
     private int energia;
     protected HashMap <String, Arma> armas;
@@ -43,11 +44,29 @@ public abstract class WarhammerPersonaje {
         return ENERGIA_MAX;
     }
 
+    public void setEnergia(int energia) {
+        this.energia = energia;
+    }
+
     public static int getContPeronajes() {
         return contPeronajes;
     }
 
     public static ArrayList<WarhammerPersonaje> getLISTA_PERSONAJES() {
         return LISTA_PERSONAJES;
+    }
+
+    public HashMap<String, Arma> getArmas() {
+        return armas;
+    }
+
+    @Override
+    public void atacar(WarhammerPersonaje victima) {
+        victima.defender(this.WarhammerPersonaje.armas(0), victima.armas.get(1));
+    }
+
+    @Override
+    public void defender(ArmaAtaque arma, ArmaDefensa defensa) {
+
     }
 }
